@@ -32,7 +32,6 @@ find_path(Samtools_INCLUDE_DIR
 find_library(Samtools_LIBRARY
     NAMES bam libbam.a bam.a
     PATHS ${Samtools_INCLUDE_DIR} ${SAMTOOLS_SEARCH_DIRS}
-    NO_DEFAULT_PATH
     PATH_SUFFIXES lib lib64 ${_samtools_ver_path}
     HINTS ENV SAMTOOLS_ROOT
 )
