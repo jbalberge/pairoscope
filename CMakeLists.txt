@@ -26,8 +26,8 @@ if(${CMAKE_C_COMPILER_ID} MATCHES "GNU|Clang")
 endif()
 
 if(${CMAKE_CXX_COMPILER_ID} MATCHES "GNU|Clang")
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -pedantic -fPIC ")
-    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wnon-virtual-dtor -std=c++0x")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wall -pedantic -fPIC CMAKE_CXX_FLAGS")
+    set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wnon-virtual-dtor -std=c++0x -pthread")
 else()
     message(
         WARNING
